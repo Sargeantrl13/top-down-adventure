@@ -63,5 +63,18 @@ public class PlayerController : MonoBehaviour
             hasKey = true; //player has the key now
 
         }
+        //write code for exiting second scene and go back to first scene
+        if (collision.gameObject.tag.Equals("exit"))
+        {
+            Debug.Log("hit");
+            SceneManager.LoadScene(0);
+        }
+
+        if (collision.gameObject.tag.Equals("end") && hasKey == true) //needs to satisfy both
+                                                                      //conditions to enter the end door
+        {
+            Debug.Log("hit");
+            SceneManager.LoadScene(2);
+        }
     }
 }

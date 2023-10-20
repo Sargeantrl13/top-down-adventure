@@ -7,6 +7,7 @@ TagManager:
   - Tag 0
   - DoorTag1
   - Key
+  - exit
   layers:
   - Default
   - TransparentFX
